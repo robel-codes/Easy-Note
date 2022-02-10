@@ -14,13 +14,13 @@ module.exports = function(app) {
   app.use(express.json());
   app.use(express.static(path.join(__dirname, '../')))
 
-  // GET 
+  // GET read the `db.json` file and return all saved notes as JSON
   app.get("/api/notes", function(req, res) {
     console.log(db);
     res.json(db.slice(1));
     });
 
-  // POST
+  // POST receive a new note to save on the request body, add it to the `db.json` file
   app.post("/api/notes", function(req, res) {
     id.current_id++; 
     req.body.id = id.current_id; 
