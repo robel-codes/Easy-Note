@@ -14,20 +14,19 @@ module.exports = function(app) {
   app.use(express.json());
   app.use(express.static(path.join(__dirname, '../')))
 
-  // GET read the `db.json` file and return all saved notes as JSON
+  // API Route | 'GET' request
   app.get("/api/notes", function(req, res) {
     console.log(db);
     res.json(db.slice(1));
     });
 
-  // POST receive a new note to save on the request body, add it to the `db.json` file
+  // API Route | 'POST' request 
   app.post("/api/notes", function(req, res) {
     id.current_id++; 
     req.body.id = id.current_id; 
-    console.log(req.body);
     db.push(req.body);
     db[0].current_id++
-    fs.appendFile(path.join(__dirname, '../db/db.json'), JSON.stringify(db), 'utf8', (err) => {
+    fs.writeFile(path.join(__dirname, '../db/db.json'), JSON.stringify(db), 'utf8', (err) => {
       if (err) throw err;
       else console.log("file written successfully");
     });
@@ -35,4 +34,18 @@ module.exports = function(app) {
     res.json(db.slice(1));
   });
 
+  
+  // API Route | 'DELETE' request
+  app.delete("/api/notes/:id", function(req, res) {
+
+    db = db.filter(note => note.id != req.params.id);
+    console.log(req.params.id);
+    
+    fs.writeFile(path.join(__dirname, '../db/db.json'), JSON.stringify(db), 'utf8', (err) => {
+      if (err) throw err;
+      else console.log("file updated");
+    });
+    console.log(db);
+    res.json(db.slice(1));
+  });
 }
