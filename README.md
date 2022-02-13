@@ -1,20 +1,61 @@
-# Easy-Note
-## User Strory
-AS A small business owner
-I WANT to be able to write and save notes
-SO THAT I can organize my thoughts and keep track of tasks I need to complete
+  # EASY-NOTE [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Acceptance Criteria
-GIVEN a note-taking application
-WHEN I open the Note Taker
-THEN I am presented with a landing page with a link to a notes page
-WHEN I click on the link to the notes page
-THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
-WHEN I enter a new note title and the note’s text
-THEN a Save icon appears in the navigation at the top of the page
-WHEN I click on the Save icon
-THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes
-WHEN I click on an existing note in the list in the left-hand column
-THEN that note appears in the right-hand column
-WHEN I click on the Write icon in the navigation at the top of the page
-THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
+  ---
+  
+  ## Repository Description
+  ###### [Back to Table of Contents](#table-of-contents)
+  App built strictly through node.js. Allows you to write and save notes so that you can organize your thoughts and keep track of tasks you need complete.
+  
+  ---
+
+  ## Table of Contents
+  * [Repository Description](#repository-description)
+  * [Installation Instructions](#installation)
+  * [Usage Information](#usage)
+  * [Contribution Guidelines](#contribution-guidelines)
+  * [Test Instructions](#test-instructions)
+  * [Questions](#questions)
+  
+  ---
+
+  ## Installation
+  ###### [Back to Table of Contents](#table-of-contents)
+  You will need to have node.js installed in your Terminal. As well as npm Packages: inqurier, fs,express
+  
+  ---
+
+  ## Usage
+  ###### [Back to Table of Contents](#table-of-contents)
+  User can access the deployed app through the link below.
+
+  App deployed on heroku [Deployed App](https://easy-note-application.herokuapp.com/)
+
+  ---
+
+  ## License
+    Project license: MIT 
+  
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+  ---
+
+  ## Contribution Guidelines
+  ###### [Back to Table of Contents](#table-of-contents)
+  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so
+
+  ---
+
+  ## Test Instructions
+  ###### [Back to Table of Contents](#table-of-contents)
+  Tests will be added in the future
+
+  ---
+
+  ## Questions
+  ###### [Back to Table of Contents](#table-of-contents)
+  If you have any questions contact at: 
+
+  Email [rofikre@yahoo.com](mailto:rofikre@yahoo.com),
+
+  GitHub [@robel-codes](https://github.com/robel-codes)
+ 
